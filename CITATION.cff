@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use TRIVENI, please cite it as below."
+title: "TRIVENI: a Y-junction Monte Carlo for ep, eA, pp and AA collisions"
+type: software
+authors:
+  - given-names: Banajit
+    family-names: Barman
+version: 0.1.0
+license: GPL-3.0-or-later
+keywords:
+  - baryon junction
+  - Monte Carlo event generator
+  - heavy-ion collisions
+  - deep inelastic scattering
+  - proton structure

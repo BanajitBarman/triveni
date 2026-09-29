@@ -1,0 +1,10 @@
+! pp at sqrt(s) = 5.02 TeV (LHC).
+! The proton must be larger than at 200 GeV: with quarkSpread = 0.36 fm the
+! sigma_gg calibration is in the black-disk regime (see the triveni-pp log).
+! quarkSpread = 0.5 fm is a placeholder until the energy dependence is fitted.
+
+PP:sigmaInel        = 67.6    ! mb
+Proton:quarkSpread  = 0.50    ! fm
+Proton:quarkWidth   = 0.17    ! fm
+Proton:stringWidth  = 0.17    ! fm
+Proton:stringFraction = 0.5

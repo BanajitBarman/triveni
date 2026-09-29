@@ -1,0 +1,9 @@
+! pp at sqrt(s) = 200 GeV (RHIC).
+! Proton geometry: placeholder values of the size of hot-spot fits to HERA
+! incoherent J/psi; to be calibrated in Phase 1.
+
+PP:sigmaInel        = 42      ! mb
+Proton:quarkSpread  = 0.36    ! fm
+Proton:quarkWidth   = 0.17    ! fm
+Proton:stringWidth  = 0.17    ! fm
+Proton:stringFraction = 0.5

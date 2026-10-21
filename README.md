@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/logo/triveni-logo-dark.svg">
+    <img src="docs/logo/triveni-logo.svg" alt="TRIVENI" width="480">
+  </picture>
+</p>
+
 # TRIVENI
 
 **A Y-junction Monte Carlo for ep, eA, pp and AA collisions.**
@@ -150,3 +157,10 @@ version. See [LICENSE](LICENSE).
 GPL-3.0-or-later keeps TRIVENI compatible with the codes it builds on:
 PYTHIA 8 (GPL-2.0-or-later, forked in Phase 2), and SMASH and JETSCAPE
 (GPL-3.0).
+
+## Logo
+
+The logo is a proton: three valence quarks carrying the colour charges red,
+green and blue, joined by Y-shaped flux tubes that meet at a colour-neutral
+junction. The files are in [docs/logo/](docs/logo/), with light and dark versions:
+SVG, PNG and a PDF for LaTeX. `docs/logo/make_logo.py` regenerates them.

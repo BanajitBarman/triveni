@@ -60,6 +60,15 @@ Settings::Settings()
   add("PP:calibrationPairs", "100000", "Proton pairs used to calibrate sigma_gg (statistical error ~0.4%)");
   add("PP:nMaps", "4", "Entropy-density maps written for the first accepted events");
 
+  add("Exclusive:target", "Au", "Coherent vector-meson target: Au | Pb | Cu | p");
+  add("Exclusive:electronGamma", "35225.05", "Lab Lorentz gamma of the electron beam (35225.05 = 18 GeV)");
+  add("Exclusive:targetGamma", "117.237", "Lab Lorentz gamma per nucleon of the target (117.237 = 110 GeV/u)");
+  add("Exclusive:wMin", "40", "Minimum gamma*-nucleon W (GeV)");
+  add("Exclusive:wMax", "1e9", "Maximum W (GeV); capped at the kinematic limit");
+  add("Exclusive:q2Edges", "0,1e-3,1e-2,1e-1,1,3,10,30", "Q^2 bin edges (GeV^2); 0 means the kinematic minimum");
+  add("Exclusive:protonB", "4.0", "Proton gluonic width B_p (GeV^-2)");
+  add("Exclusive:fitW", "30,45,70,100,150,200", "W points (GeV) for the fit to gamma p -> J/psi p");
+
   add("ProtonApp:nMaps", "3", "Quark configurations drawn as thickness maps");
   add("ProtonApp:mapHalfWidth", "1.5", "Half width (fm) of the single-proton grid");
   add("ProtonApp:mapStep", "0.02", "Cell size (fm) of the single-proton grid");

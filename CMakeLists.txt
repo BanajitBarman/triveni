@@ -14,25 +14,29 @@ endif()
 find_package(Threads REQUIRED)
 
 add_library(triveni
+  src/Bessel.cxx
+  src/Exclusive.cxx
   src/Grid.cxx
+  src/Nucleus.cxx
   src/PPCollision.cxx
   src/Proton.cxx
   src/Random.cxx
   src/Settings.cxx
-  src/Steiner.cxx)
+  src/Steiner.cxx
+  src/VectorMeson.cxx)
 target_include_directories(triveni PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_compile_options(triveni PRIVATE -Wall -Wextra -Wpedantic)
 target_link_libraries(triveni PUBLIC Threads::Threads)
 target_compile_definitions(triveni PUBLIC TRIVENI_VERSION="${PROJECT_VERSION}")
 
-foreach(app triveni-proton triveni-pp)
+foreach(app triveni-proton triveni-pp triveni-exclusive)
   add_executable(${app} apps/${app}.cxx)
   target_link_libraries(${app} PRIVATE triveni)
   target_compile_options(${app} PRIVATE -Wall -Wextra -Wpedantic)
 endforeach()
 
 enable_testing()
-foreach(test test_random test_steiner test_proton test_pp)
+foreach(test test_random test_steiner test_proton test_pp test_exclusive)
   add_executable(${test} tests/${test}.cxx)
   target_link_libraries(${test} PRIVATE triveni)
   target_compile_options(${test} PRIVATE -Wall -Wextra -Wpedantic)
